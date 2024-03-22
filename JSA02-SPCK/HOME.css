@@ -48,3 +48,22 @@ body {
 .nav-links li a:hover {
     color: #ffcc00;
 }
+.benefit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.quality{
+    margin-right: 150px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.pay{
+    margin-right: 150px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.trade{
+    border: 2px solid black;
+    border-radius: 8px;
+}
