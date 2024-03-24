@@ -1,74 +1,81 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    color: #fff;
-    text-decoration: none;
-    font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .nav-links li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .nav-links li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .nav-links li a:hover {
-    color: #ffcc00;
+  color: #ffcc00;
 }
-.benefit{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+.benefit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.quality{
-    margin-right: 100px;
-    border: 2px solid black;
-    border-radius: 8px;
+
+.quality {
+  margin-right: 100px;
+  border: 2px solid black;
+  border-radius: 8px;
 }
-.pay{
-    margin-right: 100px;
-    border: 2px solid black;
-    border-radius: 8px;
+
+.pay {
+  margin-right: 100px;
+  border: 2px solid black;
+  border-radius: 8px;
 }
-.trade{
-    margin-left: 100;
-    border: 2px solid black;
-    border-radius: 8px;
+
+.trade {
+  margin-left: 100;
+  border: 2px solid black;
+  border-radius: 8px;
 }
-* {box-sizing:border-box}
+
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -83,7 +90,8 @@ body {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -105,8 +113,9 @@ body {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -141,7 +150,8 @@ body {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -152,6 +162,30 @@ body {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.product-inf {
+  max-width: 200px;
+  max-height: 400px;
+}
+
+h3 {
+  max-width: 325px;
+}
+
+.item {
+  max-height: 500px;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
 }
