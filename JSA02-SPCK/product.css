@@ -97,5 +97,6 @@ img {
     max-width: 1300px;
     display: flex;
     flex-direction: column;
-    padding-left: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
