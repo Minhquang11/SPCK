@@ -215,3 +215,7 @@ h3 {
 #searchButton:hover {
   background-color: #0056b3;
 }
+.item a{
+  text-decoration: none;
+  color: black;
+}
