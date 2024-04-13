@@ -1,406 +1,202 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+<hea>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HOME.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-        .navbar {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            color: #fff;
-            text-decoration: none;
-            font-size: 24px;
-        }
-
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .nav-links li {
-            margin-right: 20px;
-        }
-
-        .nav-links li:last-child {
-            margin-right: 0;
-        }
-
-        .nav-links li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        .nav-links li a:hover {
-            color: #ffcc00;
-        }
-
-        .container1 {
-            position: relative;
-
-            max-width: 300px;
-            max-height: 300px;
-            margin: 10px;
-        }
-
-
-
-        .middle {
-            transition: .5s ease;
-            opacity: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        .container1:hover .image {
-            opacity: 0.3;
-        }
-
-        .container1:hover .middle {
-            opacity: 1;
-        }
-
-        .text {
-            background-color: #04AA6D;
-            color: white;
-            font-size: 16px;
-            padding: 16px 32px;
-        }
-
-        .all {
-            display: flex;
-            flex-direction: row;
-        }
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
-
-* {
-  font-family: Open Sans;
-}
-
-section {
-  width: 100%;
-  display: inline-block;
-  background: #333;
-  height: 50vh;
-  text-align: center;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: underline;
-}
-
-.footer-distributed{
-	background: #666;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
-}
-
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
-	margin: 0;
-}
-
-.footer-distributed h3 span{
-	color:  lightseagreen;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
-}
-
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
-	color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-	color:  #222;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 35%;
-}
-
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
-
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
-
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-  font-weight:400;
-	vertical-align: middle;
-	margin:0;
-}
-
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
-
-.footer-distributed .footer-center p a{
-	color:  lightseagreen;
-	text-decoration: none;;
-}
-
-.footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  left: 0;
-  color: #fff;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footer-distributed .footer-links .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-	width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
-}
-
-    </style>
+    
 </head>
 
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">MKVN</a>
+            <a href="#" class="logo">TGCL</a>
             <ul class="nav-links">
                 <li><a href="HOME.html">Trang chủ</a></li>
                 <li><a href="SP.html">Sản phẩm</a></li>
-                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Liên lạc</a></li>
+                <li><a href="login/login.html">Đăng nhập</a></li>
             </ul>
         </div>
     </nav>
 
+
+    <div class="ifor">
+        <h1>Chào Mừng Bạn Đến Với Thế Giới Cầu Lông</h1>
+        <p> Xây Dựng Tinh Thần Đội Nhóm: Cầu lông thường được chơi dưới dạng đôi hoặc đội, điều này khuyến khích sự hợp
+            tác và giao tiếp giữa các thành viên trong đội. Việc làm việc cùng nhau để đạt được mục tiêu chung cũng giúp
+            xây dựng tinh thần đội nhóm và kỹ năng giao tiếp.</p>
+        <p>Chào mừng bạn đến với cửa hàng cầu lông của chúng tôi - điểm đến lý tưởng cho những người yêu thể thao này!
+            Với một sự kết hợp đa dạng của các sản phẩm chất lượng cao và dịch vụ chuyên nghiệp, chúng tôi cam kết mang
+            đến trải nghiệm mua sắm tốt nhất cho cộng đồng người chơi cầu lông.</p>
+
+        <p> Tại cửa hàng của chúng tôi, bạn sẽ tìm thấy một loạt các sản phẩm từ các thương hiệu hàng đầu trong ngành
+            cầu lông. Từ vợt cầu lông với nhiều loại vật liệu và kiểu dáng khác nhau cho đến giày cầu lông, quần áo, và
+            phụ kiện, chúng tôi đều có đủ để đáp ứng mọi nhu cầu của bạn.</p>
+
+        <p> Chúng tôi tự hào về dịch vụ khách hàng tận tâm và chuyên nghiệp của mình. Đội ngũ nhân viên giàu kinh nghiệm
+            của chúng tôi luôn sẵn lòng tư vấn và hỗ trợ bạn trong việc chọn lựa sản phẩm phù hợp nhất với nhu cầu và
+            mục tiêu chơi của bạn.</p>
+
+        <p> Hãy đến và khám phá cửa hàng cầu lông của chúng tôi ngay hôm nay để trải nghiệm sự đa dạng, chất lượng và
+            dịch vụ tuyệt vời!</p>
+        <p>Cầu lông là một môn thể thao đầy sức hấp dẫn và đòi hỏi sự tập trung cao độ. Trò chơi này thường được thi
+            đấu trên sân cầu lông, với mục đích đưa cầu qua một mạng bằng cách sử dụng vợt. Cầu lông không chỉ là một
+            hoạt động giải trí, mà còn là một phương tiện giúp cải thiện sức khỏe và phát triển kỹ năng vận động, tập
+            trung và tinh thần đội nhóm. Với tốc độ nhanh và sự linh hoạt, cầu lông thu hút người chơi ở mọi độ tuổi và
+            trở thành một trong những môn thể thao phổ biến trên toàn thế giới.</p>
+        <p>Môn cầu lông mang lại nhiều lợi ích đối với sức khỏe và phát triển cá nhân. Dưới đây là một số trong số đó:
+        </p>
+
+        <p> Cải Thiện Sức Khỏe Tim Mạch: Chơi cầu lông là một hoạt động thể chất giúp cải thiện sức khỏe tim mạch và hệ
+            thống tuần hoàn máu. Việc chạy nhảy, vận động và tăng cường lưu thông máu có thể giảm nguy cơ mắc các bệnh
+            tim và động mạch.</p>
+
+        <p> Tăng Cường Sức Mạnh Cơ Bắp: Cầu lông đòi hỏi sự sử dụng của nhiều nhóm cơ bắp, bao gồm cả chân, tay, vai và
+            cơ lưng. Việc thường xuyên tập luyện sẽ giúp cải thiện sức mạnh và sự linh hoạt của cơ bắp.</p>
+
+        <p> Phát Triển Kỹ Năng Tập Trung và Linh Hoạt: Trò chơi này đòi hỏi người chơi phải tập trung cao độ và phản ứng
+            nhanh chóng. Đồng thời, việc di chuyển nhanh và linh hoạt trên sân cầu lông cũng giúp cải thiện kỹ năng linh
+            hoạt của người chơi.</p>
+
+        <p> Giảm Cân và Giữ Dáng: Do đặc tính vận động nhanh chóng và tiêu hao năng lượng cao, chơi cầu lông có thể giúp
+            đốt cháy calo và giảm cân hiệu quả. Đồng thời, việc duy trì một lối sống hoạt động cũng giúp duy trì vóc
+            dáng và sức khỏe tốt.</p>
+        <h2>CHÚC QUÝ KHÁCH MỘT NGÀY TỐT LÀNH</h2>
+
+
+    </div>
+
     <div class="all">
         <div class="container1">
-            <img src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
-                alt="Avatar" class="image" style="width:100%">
+            <a href="VTT.html"><img
+                    src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
+                    alt="Avatar" class="image" style="width:100%"></a>
             <div class="middle">
-                <div class="text">Vợt tầm thấp</div>
+                <div class="text"><a href="VTT.html">Vợt tầm thấp</a></div>
             </div>
         </div>
         <div class="container1">
-            <img src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
-                alt="Avatar" class="image" style="width:100%">
+            <a href="VTTr.html"><img
+                    src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
+                    alt="Avatar" class="image" style="width:100%"></a>
             <div class="middle">
-                <div class="text">Vợt tầm trung</div>
+                <div class="text"><a href="VTTr.html">Vợt tầm trung</a></div>
             </div>
         </div>
         <div class="container1">
-            <img src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
-                alt="Avatar" class="image" style="width:100%">
+            <a href="VCC.html"><img
+                    src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
+                    alt="Avatar" class="image" style="width:100%"></a>
             <div class="middle">
-                <div class="text">Vợt cao cấp</div>
+                <div class="text"><a href="VCC.html">Vợt cao cấp</a></div>
             </div>
         </div>
         <div class="container1">
-            <img src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
-                alt="Avatar" class="image" style="width:100%">
+            <a href="SETV.html"><img
+                    src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
+                    alt="Avatar" class="image" style="width:100%"></a>
             <div class="middle">
-                <div class="text">Các set vợt</div>
+                <div class="text"><a href="SETV.html">Set vợt</a></div>
             </div>
         </div>
+
     </div>
-  
-<footer class="footer-distributed">
+    <div class="all">
+        <div class="container1">
+            <a href="yonex.html"><img
+                    src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
+                    alt="Avatar" class="image" style="width:100%"></a>
+            <div class="middle">
+                <div class="text"><a href="yonex.html">Vợt Yonex</a></div>
+            </div>
+        </div>
+        <div class="container1">
+            <a href="lining.html"><img
+                    src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
+                    alt="Avatar" class="image" style="width:100%"></a>
+            <div class="middle">
+                <div class="text"><a href="lining.html">Vợt Lining</a></div>
+            </div>
+        </div>
+        <div class="container1">
+            <a href="kumpoo.html"><img
+                    src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
+                    alt="Avatar" class="image" style="width:100%"></a>
+            <div class="middle">
+                <div class="text"><a href="kumpoo.html">Vợt Kumpoo</a></div>
+            </div>
+        </div>
+        <div class="container1">
+            <a href="victor.html"><img
+                    src="https://cdn.shopvnb.com/img/400x400/uploads/danh_muc/thumb/1.1.webp" alt="Avatar" class="image"
+                    alt="Avatar" class="image" style="width:100%"></a>
+            <div class="middle">
+                <div class="text"><a href="victor.html">Vợt Victor</a></div>
+            </div>
+        </div>
 
-			<div class="footer-left">
+    </div>
 
-				<h3>Company<span>logo</span></h3>
 
-				<p class="footer-links">
-					<a href="#" class="link-1">Home</a>
-					
-					<a href="#">Blog</a>
-				
-					<a href="#">Pricing</a>
-				
-					<a href="#">About</a>
-					
-					<a href="#">Faq</a>
-					
-					<a href="#">Contact</a>
-				</p>
+    <footer class="footer-distributed">
 
-				<p class="footer-company-name">Company Name © 2015</p>
-			</div>
+        <div class="footer-left">
 
-			<div class="footer-center">
+            <h3>Thế giới<span>cầu lông</span></h3>
 
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
-				</div>
+            <p class="footer-links">
+                <a href="HOME.html" class="link-1">Home</a>
 
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+1.555.555.5555</p>
-				</div>
+                <a href="SP.html">Sản phẩm</a>
 
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
-				</div>
+                <a href="#">Liên lạc</a>
 
-			</div>
+            </p>
 
-			<div class="footer-right">
+            <p class="footer-company-name">Thế giới cầu lông</p>
+        </div>
 
-				<p class="footer-company-about">
-					<span>About the company</span>
-					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-				</p>
+        <div class="footer-center">
 
-				<div class="footer-icons">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>102/21 Khu phố Tân An</span> Dĩ An, Bình Dương, Việt Nam</p>
+            </div>
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>0908209281</p>
+            </div>
 
-				</div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">nguyenhuuquangminh2008@gmail.com</a></p>
+            </div>
 
-			</div>
+        </div>
 
-		</footer>
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Thế giới cầu lông</span>
+                Hân hạnh phục vụ quý khách
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/profile.php?id=100084755265975"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/keepiplenty/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Minhquang11"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>

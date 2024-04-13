@@ -1,5 +1,5 @@
 let login = document.getElementById('login')
-login.addEventListener("submit", (e) =>{
+login.addEventListener("submit", (e) => {
     e.preventDefault()
 
     let users = JSON.parse(localStorage.users)
@@ -7,12 +7,12 @@ login.addEventListener("submit", (e) =>{
     let email = document.getElementById("email")
     let pw = document.getElementById("password");
 
-    let check = users.map(index => index.email == email.ariaValueMax.trim()&& index.pw == pw.ariaValueMax.trim())
+    let check = users.map(index => index.email == email.value.trim() && index.pw == pw.value.trim())
 
-    if (check.inclues(true)){
-        window.location.href = "../index.html"
-    } else{
-        alert("please input again")
+    if (check[0] == false){
+        alert("You are successful")
+        window.location.href = "../HOME.html"
+    } else {
+        alert("Please input again")
     }
-
 })

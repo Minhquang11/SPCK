@@ -1,5 +1,5 @@
-let register  = document.querySelector("#register")
-register.addEventListener("submit", (e) =>{
+let register = document.querySelector("#register")
+register.addEventListener("submit", (e) => {
     e.preventDefault()
     let email = document.getElementById('email')
     let pw = document.getElementById("password")
@@ -28,23 +28,26 @@ register.addEventListener("submit", (e) =>{
     }
         else if (!pw.value.trim().match(numbers)) {
         alert("Password must  contain a number or special character")
-    }   
+    }
         else {
-            if(localStorage.users){
+            if(localStorage.users) {
                 let users = JSON.parse(localStorage.users)
                 users.push({
                     email: email.value.trim(),
                     pw: pw.value.trim()
                 })
                 localStorage.setItem("users", JSON.stringify(users))
-            }else{
-                localStorage.setItem("users", JSON.stringify(
-                    [
-                        {
-                            email: email.value.trim(),
-                            pw: pw.value.trim()
-                        }
-                    ]));
+            } else {
+                localStorage.setItem("users",
+                JSON.stringify(
+                [
+                    {
+                      email: email.value.trim(),
+                      pw: pw.value.trim()
+                    }
+                ]));
             }
-        } location.replace("../login/login.html")
+            location.replace("../login/login.html")
+    }
+
 })
