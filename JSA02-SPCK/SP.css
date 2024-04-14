@@ -49,12 +49,11 @@ body {
   color: #ffcc00;
 }
 
-.all {
-  display: flex;
-  flex-direction: row;
-  padding-left: 600px;
-
+.logoimg{
+  max-width: 50px;
+  max-height: 50px;
 }
+
 
 .benefit {
   display: flex;

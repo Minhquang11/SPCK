@@ -9,8 +9,7 @@ login.addEventListener("submit", (e) => {
 
     let check = users.map(index => index.email == email.value.trim() && index.pw == pw.value.trim())
 
-    if (check[0] == false){
-        alert("You are successful")
+    if (check[0] == true){
         window.location.href = "../HOME.html"
     } else {
         alert("Please input again")

@@ -9,6 +9,11 @@ body {
     color: #fff;
     padding: 20px 0;
   }
+  .logoimg{
+    max-width: 50px;
+    max-height: 50px;
+  }
+  
   
   .container {
     max-width: 1200px;

@@ -5,10 +5,17 @@ body {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   padding: 20px 0;
 }
+
+
+.logoimg{
+  max-width: 50px;
+  max-height: 50px;
+}
+
 
 .container {
   max-width: 1200px;
@@ -22,6 +29,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
+
 }
 
 .nav-links {
@@ -290,5 +298,9 @@ margin-left: 0;
 }
 .ifor{
   max-width: 1000px;
-  margin-left: 400px;
+  margin-left: 175px;
+}
+a{
+  color: #222;
+  text-decoration: none
 }
